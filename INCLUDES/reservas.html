@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Bar</title>
+    <script src="../JS/reservas.js"></script>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="reservas">
+
+        <form id="reservaForm" action="../PHP/procesar_reservas.php" method="post">
+            <h1>¡Haz tu reserva!</h1>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1">
+
+            <button type="submit">Enviar reserva</button>
+            <div id="mensaje"></div>
+        </form>
+
+
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Bar de la Esquina. Diseñado por Miguel Jesus Arias Cañete.</p>
+    </footer>
+</body>
+
+</html>
