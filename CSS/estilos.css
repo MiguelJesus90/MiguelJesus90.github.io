@@ -417,6 +417,7 @@ footer {
   header {
     width: 100%;
     background-size: 160px 160px; /* Ajusta el tamaño del logo */
+    background-position: center  20px;  ;
     padding-top: 30px; /* Añade espacio en la parte superior */
   }
 
@@ -439,7 +440,8 @@ footer {
   }
 
   nav ul li a {
-    font-size: 14px; /* Tamaño de fuente más pequeño */
+    padding-right: 8px;
+    font-size: 17px; /* Tamaño de fuente más pequeño */
   }
 
   nav ul li a:hover {
@@ -599,9 +601,11 @@ footer {
 
 
 
-/* Media query para dispositivos con un ancho de pantalla mayor a 600px */
-@media only screen and (min-width: 601px) {
-  /* Estilos para dispositivos con un ancho de pantalla mayor a 600px */
+/* Media query para dispositivos con un ancho de pantalla entre 600px y 959px (pantallas de teléfonos móviles en orientación apaisada) */
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  /* Estilos para pantallas de teléfonos móviles en orientación apaisada */
+
+
 
   /* Encabezado */
   header {
