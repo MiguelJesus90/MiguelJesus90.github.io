@@ -595,3 +595,68 @@ footer {
  
   }
 }
+
+
+
+
+/* Media query para dispositivos con un ancho de pantalla mayor a 600px */
+@media only screen and (min-width: 601px) {
+  /* Estilos para dispositivos con un ancho de pantalla mayor a 600px */
+
+  /* Encabezado */
+  header {
+    background-position: center -10px; /* Mueve la imagen 10px hacia abajo desde el centro */
+    background-size: 200px 200px;
+    padding-top: 50px; /* Ajusta el espacio en la parte superior */
+  }
+
+  /* Menú de navegación */
+  nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+
+  nav ul li {
+    margin: 0 20px; /* Aumenta el espacio entre elementos */
+  }
+
+  nav ul li a {
+    padding-right: 20px;
+    font-size: 24px; /* Tamaño de fuente ligeramente más grande */
+  }
+
+  /* Secciones */
+  section {
+    width: 80%; /* Ajusta el ancho del contenido */
+    margin: 0 auto;
+  }
+
+  .contenido,
+  #nosotros {
+    width: 70%; /* Ajusta el ancho del contenido */
+    margin-bottom: 80px; /* Ajusta el margen inferior */
+  }
+
+  /* Contenedor del formulario de reserva */
+  #reservaForm {
+    max-width: 60%; /* Utiliza un ancho máximo relativo */
+  }
+
+  /* Contenedor de imágenes */
+  #fotos {
+    grid-template-columns: repeat(3, 1fr); /* Distribuye las imágenes en 3 columnas */
+  }
+
+  /* Contenedor de información de contacto */
+  .contact-info form input[type="text"],
+  .contact-info form input[type="email"],
+  .contact-info form textarea {
+    width: 50%; /* Ajusta el ancho de los campos de entrada */
+  }
+}
