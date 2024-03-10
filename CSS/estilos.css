@@ -23,7 +23,8 @@ body {
 
 header {
   background-image: url('../IMG/logo.jpg');
-  background-size: 260px 260px; /* Ancho x Alto */
+  background-size: 260px 260px;
+  /* Ancho x Alto */
   background-position: center;
   background-repeat: no-repeat;
   background-color: #282828;
@@ -31,9 +32,12 @@ header {
   padding-bottom: 20px;
 
   display: flex;
-  justify-content:flex-end; /* Alinea los elementos del nav al final del header */
-  align-items: flex-end; /* Alinea los elementos del nav en la parte inferior del header */
-  height: 170px; /* Por ejemplo, puedes ajustar esta altura según tus necesidades */
+  justify-content: flex-end;
+  /* Alinea los elementos del nav al final del header */
+  align-items: flex-end;
+  /* Alinea los elementos del nav en la parte inferior del header */
+  height: 170px;
+  /* Por ejemplo, puedes ajustar esta altura según tus necesidades */
 }
 
 nav {
@@ -44,7 +48,8 @@ nav {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0; /* Elimina cualquier margen predeterminado */
+  margin: 0;
+  /* Elimina cualquier margen predeterminado */
 }
 
 nav ul li {
@@ -53,16 +58,18 @@ nav ul li {
 }
 
 nav ul li a {
-  
+
   font-size: 20px;
   color: #d34b79;
   text-decoration: none;
-  transition: color 0.3s ease, font-size 0.2s ease; /* Agregamos transición para el color y el tamaño de fuente */
+  transition: color 0.3s ease, font-size 0.2s ease;
+  /* Agregamos transición para el color y el tamaño de fuente */
 }
 
 nav ul li a:hover {
   color: #fbff00;
-  font-size: 22px; /* Aumentamos ligeramente el tamaño de fuente al pasar el cursor */
+  font-size: 22px;
+  /* Aumentamos ligeramente el tamaño de fuente al pasar el cursor */
   text-decoration: none;
 }
 
@@ -79,7 +86,7 @@ section {
 
   /* Add borders */
   border-radius: 5px;
-  background-color:#09bacd;
+  background-color: white /*#f2f2f2*/;
 }
 
 section h1,
@@ -231,7 +238,8 @@ section h2 ul li {
 
 /* Estilo para el contenedor del formulario */
 #reservaForm {
-  box-sizing: border-box; /* Incluye el padding y el border en el ancho especificado */
+  box-sizing: border-box;
+  /* Incluye el padding y el border en el ancho especificado */
   width: 100%;
   max-width: 30rem;
   margin: 0 auto;
@@ -331,7 +339,7 @@ section h2 ul li {
 }
 
 .contact-info form button {
- width: 100%;
+  width: 100%;
   padding: 0.75rem;
   background-color: #09bacd;
   color: #fff;
@@ -385,7 +393,8 @@ section h2 ul li {
 #mapid {
   /* Establecer una altura para el mapa */
   height: 400px;
-  z-index: 1; /* Valor de z-index más alto para el mapa */
+  z-index: 1;
+  /* Valor de z-index más alto para el mapa */
 }
 
 footer {
@@ -394,7 +403,7 @@ footer {
   text-align: center;
   padding: 10px;
   margin-top: auto;
-  
+
 }
 
 
@@ -416,9 +425,12 @@ footer {
   /* Encabezado */
   header {
     width: 100%;
-    background-size: 160px 160px; /* Ajusta el tamaño del logo */
-    background-position: center  20px;  ;
-    padding-top: 30px; /* Añade espacio en la parte superior */
+    background-size: 160px 160px;
+    /* Ajusta el tamaño del logo */
+    background-position: center 20px;
+    ;
+    padding-top: 30px;
+    /* Añade espacio en la parte superior */
   }
 
   /* Menú de navegación */
@@ -436,66 +448,77 @@ footer {
     display: inline;
     margin: 10px 0;
     padding-right: 5px;
-    text-align: center; /* Centra los elementos */
+    text-align: center;
+    /* Centra los elementos */
   }
 
   nav ul li a {
     padding-right: 8px;
-    font-size: 17px; /* Tamaño de fuente más pequeño */
+    font-size: 17px;
+    /* Tamaño de fuente más pequeño */
   }
 
   nav ul li a:hover {
     color: #fbff00;
-    font-size: 15px; /* Aumentamos ligeramente el tamaño de fuente al pasar el cursor */
+    font-size: 15px;
+    /* Aumentamos ligeramente el tamaño de fuente al pasar el cursor */
     text-decoration: none;
   }
 
   /* Secciones */
   section {
-    width: 90%; /* Ajusta el ancho para que sea más estrecho */
+    width: 90%;
+    /* Ajusta el ancho para que sea más estrecho */
     margin: 0 auto;
-   
+
   }
-  
 
-.contenido{
-  width: 80%;
-  margin: 20px auto;
-  margin-bottom: 100px;
-}
 
-#nosotros {
-  width: 80%;
-  margin: 20px auto;
-  margin-bottom: 100px; /* Ajusta el margen inferior para dejar espacio para el footer */
-}
+  .contenido {
+    width: 80%;
+    margin: 20px auto;
+    margin-bottom: 100px;
+  }
+
+  #nosotros {
+    width: 80%;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    /* Ajusta el margen inferior para dejar espacio para el footer */
+  }
 
 
 
 
   /* Estilos para el menú */
   #menu {
-    padding: 10px; /* Reducir el padding */
+    padding: 10px;
+    /* Reducir el padding */
   }
 
   .menu-section h2 {
-    font-size: 20px; /* Reducir el tamaño del título */
+    font-size: 20px;
+    /* Reducir el tamaño del título */
   }
 
   .menu-section ul li {
-    padding-right: 20px; /* Reducir el espaciado entre elementos del menú */
+    padding-right: 20px;
+    /* Reducir el espaciado entre elementos del menú */
   }
 
   .menu-section img {
-    width: 100%; /* Ajustar el ancho de la imagen al contenedor */
-    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    width: 100%;
+    /* Ajustar el ancho de la imagen al contenedor */
+    height: auto;
+    /* Permitir que la altura se ajuste automáticamente */
   }
 
   /* Contenedor del formulario de reserva */
   #reservaForm {
     box-sizing: border-box;
     width: 100%;
-    max-width: 95vw; /* Utiliza un ancho máximo relativo */
+    max-width: 95vw;
+    /* Utiliza un ancho máximo relativo */
     margin: 0 auto;
     padding: 1rem;
     background-color: #f2f2f2;
@@ -510,14 +533,16 @@ footer {
   }
 
   #reservaForm label {
-    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    font-size: 1.1rem;
+    /* Tamaño de fuente más grande */
   }
 
   #reservaForm input {
     width: 95%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    font-size: 1rem; /* Tamaño de fuente normal */
+    font-size: 1rem;
+    /* Tamaño de fuente normal */
   }
 
   #reservaForm button {
@@ -533,21 +558,24 @@ footer {
 
 
   /* Estilo para el mapa */
-#mapid {
-  /* Establecer una altura para el mapa */
-  height: 250px;
-  width: 100%;
-}
+  #mapid {
+    /* Establecer una altura para el mapa */
+    height: 250px;
+    width: 100%;
+  }
 
-/* Estilo para reducir el tamaño de los popups en Leaflet */
-.leaflet-popup-content-wrapper {
-  max-width: 200px; /* Ajusta el ancho máximo del popup */
-  font-size: 9px; /* Ajusta el tamaño del texto dentro del popup */
-}
+  /* Estilo para reducir el tamaño de los popups en Leaflet */
+  .leaflet-popup-content-wrapper {
+    max-width: 200px;
+    /* Ajusta el ancho máximo del popup */
+    font-size: 9px;
+    /* Ajusta el tamaño del texto dentro del popup */
+  }
 
-.leaflet-popup-content {
-  overflow: hidden; /* Asegura que el contenido dentro del popup no se desborde */
-}
+  .leaflet-popup-content {
+    overflow: hidden;
+    /* Asegura que el contenido dentro del popup no se desborde */
+  }
 
 
 
@@ -555,7 +583,8 @@ footer {
   #contacto {
     width: 80%;
     margin: 30px auto;
-    margin-bottom: 100px; /* Ajusta el margen inferior para dejar espacio para el footer */
+    margin-bottom: 100px;
+    /* Ajusta el margen inferior para dejar espacio para el footer */
   }
 
   /* Contenedor de información de contacto */
@@ -585,18 +614,62 @@ footer {
   footer {
 
 
-    position: relative; /* Prueba cambiando a relative en lugar de fixed */
+    position: relative;
+    /* Prueba cambiando a relative en lugar de fixed */
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #333; /* Color de fondo */
-    color: #d34b79;/* Color del texto */
-    padding: 5px; /* Espacio interno */
-    text-align: center; /* Alineación del texto */
+    background-color: #333;
+    /* Color de fondo */
+    color: #d34b79;
+    /* Color del texto */
+    padding: 5px;
+    /* Espacio interno */
+    text-align: center;
+    /* Alineación del texto */
 
- 
+
   }
+
+
+
+
+
 }
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.dark-mode .menu-section {
+  
+  background-color: #444;
+  color: #fff;
+}
+
+
+.dark-mode .menu-section h2 {
+  
+  color: #fff;
+}
+
+.dark-mode #reservaForm {
+  background-color: #444;
+  color: #fff;
+
+}
+
+.dark-mode #contacto {
+  background-color: #444;
+  color: #fff;
+}
+
+
+
+
+
+
 
 
 
@@ -609,58 +682,70 @@ footer {
 
   /* Encabezado */
   header {
-    background-position: center -10px; /* Mueve la imagen 10px hacia abajo desde el centro */
+    background-position: center -10px;
+    /* Mueve la imagen 10px hacia abajo desde el centro */
     background-size: 200px 200px;
-    padding-top: 50px; /* Ajusta el espacio en la parte superior */
+    padding-top: 50px;
+    /* Ajusta el espacio en la parte superior */
   }
 
   /* Menú de navegación */
   nav {
     margin: 0 auto;
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
   }
 
   nav ul {
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
   }
 
   nav ul li {
-    margin: 0 20px; /* Aumenta el espacio entre elementos */
+    margin: 0 20px;
+    /* Aumenta el espacio entre elementos */
   }
 
   nav ul li a {
     padding-right: 20px;
-    font-size: 24px; /* Tamaño de fuente ligeramente más grande */
+    font-size: 24px;
+    /* Tamaño de fuente ligeramente más grande */
   }
 
   /* Secciones */
   section {
-    width: 80%; /* Ajusta el ancho del contenido */
+    width: 80%;
+    /* Ajusta el ancho del contenido */
     margin: 0 auto;
   }
 
   .contenido,
   #nosotros {
-    width: 70%; /* Ajusta el ancho del contenido */
-    margin-bottom: 80px; /* Ajusta el margen inferior */
+    width: 70%;
+    /* Ajusta el ancho del contenido */
+    margin-bottom: 80px;
+    /* Ajusta el margen inferior */
   }
 
   /* Contenedor del formulario de reserva */
   #reservaForm {
-    max-width: 60%; /* Utiliza un ancho máximo relativo */
+    max-width: 60%;
+    /* Utiliza un ancho máximo relativo */
   }
 
   /* Contenedor de imágenes */
   #fotos {
-    grid-template-columns: repeat(3, 1fr); /* Distribuye las imágenes en 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
+    /* Distribuye las imágenes en 3 columnas */
   }
 
   /* Contenedor de información de contacto */
   .contact-info form input[type="text"],
   .contact-info form input[type="email"],
   .contact-info form textarea {
-    width: 50%; /* Ajusta el ancho de los campos de entrada */
+    width: 50%;
+    /* Ajusta el ancho de los campos de entrada */
   }
 }
