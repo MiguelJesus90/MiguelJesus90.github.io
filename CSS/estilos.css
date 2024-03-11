@@ -668,7 +668,11 @@ footer {
 
 
 
-
+/* Estilos para el tema claro */
+#icono-tema {
+  width: 20px; /* Ancho de la imagen */
+  height: 20px; /* Alto de la imagen */
+}
 
 
 
