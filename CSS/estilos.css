@@ -149,6 +149,7 @@ section h2 ul li {
   padding: 20px;
   border: none;
   background-color: #09bacd;
+  max-height: 90vh;
 }
 
 /* Estilos para las secciones */
@@ -732,6 +733,9 @@ footer {
     margin-bottom: 80px;
     /* Ajusta el margen inferior */
   }
+
+
+
 
   /* Contenedor del formulario de reserva */
   #reservaForm {
