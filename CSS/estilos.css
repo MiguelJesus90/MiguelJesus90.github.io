@@ -79,7 +79,7 @@ section {
   /*centrar al centro*/
   margin: 0 auto;
   padding: 20px;
-  /*crear espacio   margin-top: 10px;
+  margin-top: 10px;
   margin-bottom: 20px;
   width: 50%;
 
@@ -148,7 +148,7 @@ section h2 ul li {
   padding: 20px;
   border: none;
   background-color: #09bacd;
-  max-height: 90vh;
+
 }
 
 /* Estilos para las secciones */
@@ -515,12 +515,6 @@ footer {
 
 
 
-#precio {
-  width: 80%;
-  margin: 20px auto;
-  margin-bottom: 20vh;
-  /* Ajusta el margen inferior para dejar espacio para el footer */
-}
 
 
 
@@ -625,10 +619,7 @@ footer {
   footer {
 
 
-    position: relative;
-    /* Prueba cambiando a relative en lugar de fixed */
-    left: 0;
-    bottom: 0;
+
     width: 100%;
     background-color: #333;
     /* Color de fondo */
