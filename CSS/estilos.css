@@ -79,8 +79,7 @@ section {
   /*centrar al centro*/
   margin: 0 auto;
   padding: 20px;
-  /*crear espacio entre los sections*/
-  margin-top: 10px;
+  /*crear espacio   margin-top: 10px;
   margin-bottom: 20px;
   width: 50%;
 
@@ -514,6 +513,17 @@ footer {
     /* Permitir que la altura se ajuste automáticamente */
   }
 
+
+
+#precio {
+  width: 80%;
+  margin: 20px auto;
+  margin-bottom: 20vh;
+  /* Ajusta el margen inferior para dejar espacio para el footer */
+}
+
+
+
   /* Contenedor del formulario de reserva */
   #reservaForm {
     box-sizing: border-box;
@@ -734,6 +744,9 @@ footer {
     /* Ajusta el margen inferior */
   }
 
+#menu {
+  max-height: 90vh;
+}
 
 
 
