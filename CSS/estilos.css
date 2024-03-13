@@ -15,6 +15,12 @@ body {
 
 
 body {
+  body {
+    min-height: 100vh; /* Establece una altura mínima del cuerpo igual al 100% del alto de la ventana del navegador */
+    margin: 0; /* Asegura que no haya márgenes que puedan afectar la posición del footer */
+    display: flex; /* Utiliza un modelo de caja flexible para el cuerpo */
+    flex-direction: column; /* Asegura que el cuerpo se expanda verticalmente */
+
 
   font-family: Arial, sans-serif;
   background-color: #09bacd;
@@ -398,12 +404,9 @@ section h2 ul li {
 }
 
 footer {
-  background-color: #333;
-  color: #d34b79;
-  text-align: center;
-  padding: 10px;
-  margin-top: auto;
-
+  position: fixed; /* Fija el footer en una posición específica en la ventana del navegador */
+  bottom: 0; /* Coloca el footer al final de la ventana del navegador */
+  width: 100%; /* Establece que el footer ocupe todo el ancho de la ventana */
 }
 
 
@@ -567,6 +570,7 @@ footer {
     /* Establecer una altura para el mapa */
     height: 250px;
     width: 100%;
+    z-index: 0;
   }
 
   /* Estilo para reducir el tamaño de los popups en Leaflet */
@@ -629,7 +633,7 @@ footer {
     /* Espacio interno */
     text-align: center;
     /* Alineación del texto */
-
+z-index: 1;
 
   }
 
@@ -760,4 +764,5 @@ footer {
     width: 50%;
     /* Ajusta el ancho de los campos de entrada */
   }
+}
 }
