@@ -11,21 +11,14 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-}
-
-
-body {
-  body {
-    min-height: 100vh; /* Establece una altura mínima del cuerpo igual al 100% del alto de la ventana del navegador */
-    margin: 0; /* Asegura que no haya márgenes que puedan afectar la posición del footer */
-    display: flex; /* Utiliza un modelo de caja flexible para el cuerpo */
-    flex-direction: column; /* Asegura que el cuerpo se expanda verticalmente */
-
-
   font-family: Arial, sans-serif;
   background-color: #09bacd;
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Establece una altura mínima igual al 100% del viewport */
 }
+
+
 
 header {
   background-image: url('../IMG/logo.jpg');
@@ -35,15 +28,14 @@ header {
   background-repeat: no-repeat;
   background-color: #282828;
   color: #fff;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   display: flex;
   justify-content: flex-end;
   /* Alinea los elementos del nav al final del header */
   align-items: flex-end;
   /* Alinea los elementos del nav en la parte inferior del header */
-  height: 170px;
-  /* Por ejemplo, puedes ajustar esta altura según tus necesidades */
+
 }
 
 nav {
@@ -53,9 +45,7 @@ nav {
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  /* Elimina cualquier margen predeterminado */
+ 
 }
 
 nav ul li {
@@ -154,6 +144,7 @@ section h2 ul li {
   padding: 20px;
   border: none;
   background-color: #09bacd;
+  flex: 1;
 
 }
 
@@ -399,14 +390,27 @@ section h2 ul li {
 #mapid {
   /* Establecer una altura para el mapa */
   height: 400px;
-  z-index: 1;
+ 
   /* Valor de z-index más alto para el mapa */
 }
 
 footer {
-  position: fixed; /* Fija el footer en una posición específica en la ventana del navegador */
-  bottom: 0; /* Coloca el footer al final de la ventana del navegador */
-  width: 100%; /* Establece que el footer ocupe todo el ancho de la ventana */
+  
+    
+    background-color: #333;
+    /* Color de fondo */
+    color: #d34b79;
+    /* Color del texto */
+    padding: 5px;
+    /* Espacio interno */
+    text-align: center;
+    /* Alineación del texto */
+    flex-shrink: 0;
+
+
+  
+
+
 }
 
 
@@ -437,12 +441,9 @@ footer {
   }
 
   /* Menú de navegación */
-  nav {
-    margin: 0 auto;
-  }
 
   nav ul {
-    margin: 0 auto;
+   margin-top: 50px;
     padding: 0;
     list-style-type: none;
   }
@@ -450,7 +451,7 @@ footer {
   nav ul li {
     display: inline;
     margin: 10px 0;
-    padding-right: 5px;
+    padding-right: 7px;
     text-align: center;
     /* Centra los elementos */
   }
@@ -624,7 +625,7 @@ footer {
 
 
 
-    width: 100%;
+   
     background-color: #333;
     /* Color de fondo */
     color: #d34b79;
@@ -633,7 +634,7 @@ footer {
     /* Espacio interno */
     text-align: center;
     /* Alineación del texto */
-z-index: 1;
+
 
   }
 
@@ -643,14 +644,14 @@ z-index: 1;
 
 }
 .dark-mode {
-  background-color: #333;
+  background-color: #282828;
   color: #fff;
 }
 
 
 .dark-mode .menu-section {
   
-  background-color: #444;
+  background-color: #282828;
   color: #fff;
 }
 
@@ -661,13 +662,13 @@ z-index: 1;
 }
 
 .dark-mode #reservaForm {
-  background-color: #444;
+  background-color: #282828;
   color: #fff;
 
 }
 
 .dark-mode #contacto {
-  background-color: #444;
+  background-color: #282828;
   color: #fff;
 }
 
@@ -764,5 +765,4 @@ z-index: 1;
     width: 50%;
     /* Ajusta el ancho de los campos de entrada */
   }
-}
 }
