@@ -15,7 +15,8 @@ body {
   background-color: #09bacd;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Establece una altura mínima igual al 100% del viewport */
+  min-height: 100vh;
+  /* Establece una altura mínima igual al 100% del viewport */
 }
 
 
@@ -45,7 +46,7 @@ nav {
 
 nav ul {
   list-style: none;
- 
+
 }
 
 nav ul li {
@@ -81,7 +82,9 @@ section {
 
   /* Add borders */
   border-radius: 5px;
-  background-color: white /*#f2f2f2*/;
+  background-color: white
+    /*#f2f2f2*/
+  ;
 }
 
 section h1,
@@ -250,7 +253,6 @@ section h2 ul li {
 #reservaForm label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #333;
   font-weight: bold;
 }
 
@@ -311,9 +313,7 @@ section h2 ul li {
   margin: 20px;
 }
 
-.contact-info h3 {
-  color: #333;
-}
+
 
 .contact-info form label {
   display: block;
@@ -390,25 +390,25 @@ section h2 ul li {
 #mapid {
   /* Establecer una altura para el mapa */
   height: 400px;
- 
+
   /* Valor de z-index más alto para el mapa */
 }
 
 footer {
-  
-    
-    background-color: #333;
-    /* Color de fondo */
-    color: #d34b79;
-    /* Color del texto */
-    padding: 5px;
-    /* Espacio interno */
-    text-align: center;
-    /* Alineación del texto */
-    flex-shrink: 0;
 
 
-  
+  background-color: #333;
+  /* Color de fondo */
+  color: #d34b79;
+  /* Color del texto */
+  padding: 5px;
+  /* Espacio interno */
+  text-align: center;
+  /* Alineación del texto */
+  flex-shrink: 0;
+
+
+
 
 
 }
@@ -438,12 +438,13 @@ footer {
     ;
     padding-top: 30px;
     /* Añade espacio en la parte superior */
+    padding-bottom: 0px;
   }
 
   /* Menú de navegación */
 
   nav ul {
-   margin-top: 50px;
+    margin-top: 50px;
     padding: 0;
     list-style-type: none;
   }
@@ -473,7 +474,7 @@ footer {
   section {
     width: 90%;
     /* Ajusta el ancho para que sea más estrecho */
-    margin: 0 auto;
+
 
   }
 
@@ -625,7 +626,7 @@ footer {
 
 
 
-   
+
     background-color: #333;
     /* Color de fondo */
     color: #d34b79;
@@ -643,6 +644,7 @@ footer {
 
 
 }
+
 .dark-mode {
   background-color: #282828;
   color: #fff;
@@ -650,14 +652,14 @@ footer {
 
 
 .dark-mode .menu-section {
-  
+
   background-color: #282828;
   color: #fff;
 }
 
 
 .dark-mode .menu-section h2 {
-  
+
   color: #fff;
 }
 
@@ -677,8 +679,10 @@ footer {
 
 /* Estilos para el tema claro */
 #icono-tema {
-  width: 20px; /* Ancho de la imagen */
-  height: 20px; /* Alto de la imagen */
+  width: 20px;
+  /* Ancho de la imagen */
+  height: 20px;
+  /* Alto de la imagen */
 }
 
 
@@ -693,16 +697,19 @@ footer {
 
   /* Encabezado */
   header {
-    background-position: center -10px;
+    /*llevar hacia abajo el nav dentro de este header */
+    background-position: center 50px;
     /* Mueve la imagen 10px hacia abajo desde el centro */
     background-size: 200px 200px;
-    padding-top: 50px;
-    /* Ajusta el espacio en la parte superior */
+    padding-top: 120px;
+    padding-bottom: 0px;
+
+
   }
 
   /* Menú de navegación */
   nav {
-    margin: 0 auto;
+
     display: flex;
     justify-content: center;
     /* Centra los elementos horizontalmente */
@@ -720,7 +727,7 @@ footer {
   }
 
   nav ul li a {
-    padding-right: 20px;
+    padding-right: 60px;
     font-size: 24px;
     /* Tamaño de fuente ligeramente más grande */
   }
@@ -728,8 +735,7 @@ footer {
   /* Secciones */
   section {
     width: 80%;
-    /* Ajusta el ancho del contenido */
-    margin: 0 auto;
+
   }
 
   .contenido,
@@ -740,9 +746,7 @@ footer {
     /* Ajusta el margen inferior */
   }
 
-#menu {
-  max-height: 90vh;
-}
+
 
 
 
