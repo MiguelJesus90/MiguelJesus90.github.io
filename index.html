@@ -8,28 +8,36 @@
     <link rel="stylesheet" href="CSS/estilos.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                
-                <li><a href="INCLUDES/nosotros.html">Nosotros</a></li>
-                <li><a href="INCLUDES/menu.html">Menú</a></li>
-                <li><a href="INCLUDES/reservas.html">Reservas</a></li>
-                <li><a href="INCLUDES/contacto.html">Contacto</a></li>
-                <li><a id="dark-mode-btn" href="#"><img src="IMG/oscuro.png" alt="Icono de Tema Claro" id="icono-tema"></a></li>
+                <li>
+                    <div id="language-buttons">
+                        <!-- Enlace con imagen para cambiar a español -->
+                        <a href="index.html" onclick="cambiarIdioma('es')"><img src="IMG/espanol.png" alt="Español"></a>
+                        <!-- Enlace con imagen para cambiar a inglés -->
+                        <a href="index-en.html" onclick="cambiarIdioma('en')"><img src="IMG/ingles.png" alt="Inglés"></a>
+                    </div>
+                </li>
+                <li><a href="PAGES/nosotros.html">Nosotros</a></li>
+                <li><a href="PAGES/menu.html">Menú</a></li>
+                <li><a href="PAGES/reservas.html">Reservas</a></li>
+                <li><a href="PAGES/contacto.html">Contacto</a></li>
+                <li><a id="dark-mode-btn" href="#"><img src="IMG/oscuro.png" alt="Icono de Tema Claro"
+                            id="icono-tema"></a></li>
 
             </ul>
-                   
+
         </nav>
     </header>
 
     <section class="contenido">
         <h1>¡Bienvenido a La Esquina!</h1>
-        <p>"¡Bienvenidos a La Esquina en Huétor-Tájar!
+        <p class="justificado">"¡Bienvenidos a La Esquina en Huétor-Tájar!
             Sumérgete en una experiencia culinaria única donde los sabores se encuentran y las sonrisas se comparten.
             En La Esquina, cada plato es una obra maestra de sabor y tradición, diseñado para deleitar tus sentidos
             y crear momentos inolvidables. Ven y únete a nosotros en este rincón acogedor donde la buena comida y las

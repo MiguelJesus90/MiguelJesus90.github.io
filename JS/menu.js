@@ -1,5 +1,4 @@
 // Función para generar las secciones del menú dinámicamente y manejar el despliegue de elementos
-// Función para generar las secciones del menú dinámicamente y manejar el despliegue de elementos
 function generarMenu() {
     const menuItems = [
         { categoria: 'Bebidas', imagenes: ['../IMG/bebidas1.jpg', '../IMG/bebidas2.jpg', '../IMG/bebidas3.jpg'], platos: ['Refrescos', 'Cervezas', 'Vinos',] },

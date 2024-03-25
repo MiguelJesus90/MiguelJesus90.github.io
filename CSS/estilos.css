@@ -70,6 +70,53 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+
+
+
+#language-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+
+
+#language-buttons a {
+  /* Otros estilos aquí */
+  background: none;
+  /* Elimina cualquier fondo */
+  border: none;
+  /* Elimina el borde */
+
+}
+
+
+#language-buttons a img {
+  width: 24px;
+  /* Define el ancho deseado para la imagen */
+  height: 24px;
+  /* Define la altura deseada para la imagen */
+  vertical-align: middle;
+  /* Alinea la imagen verticalmente en el medio del botón */
+  margin-right: 15px;
+  /* Añade un pequeño margen a la derecha para separar la imagen del texto */
+}
+
+
+#language-buttons a:hover {
+  /* Estilos que se aplicarán cuando el cursor esté sobre el botón */
+  border-radius: 5px; /* Agrega esquinas redondeadas */
+  /* Agrandar ligeramente */
+  transform: scale(1.1); /* Cambié 1.2 por 1.1 para una ampliación menos pronunciada */
+  /* Agrega transición suave para una animación más suave */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Cambié 0.2s a 0.3s para una transición un poco más lenta */
+  /* Agrega un poco de opacidad al pasar el cursor */
+  opacity: 0.8;
+}
+
+
 /* Section Styles */
 
 section {
@@ -108,7 +155,13 @@ section h2 ul li {
   margin-bottom: 20px;
   background-color: #ffffff;
   border: 2px solid #ced4da;
+
 }
+
+.justificado {
+  text-align: justify;
+}
+
 
 /* Estilos para el contenedor del slider */
 .slider {
@@ -483,6 +536,7 @@ footer {
     width: 80%;
     margin: 20px auto;
     margin-bottom: 100px;
+
   }
 
   #nosotros {

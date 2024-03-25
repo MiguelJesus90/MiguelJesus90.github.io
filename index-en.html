@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar de la Esquina</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div id="language-buttons">
+                        <!-- Enlace con imagen para cambiar a español -->
+                        <a href="index.html" onclick="cambiarIdioma('es')"><img src="IMG/espanol.png" alt="Español"></a>
+                        <!-- Enlace con imagen para cambiar a inglés -->
+                        <a href="index-en.html" onclick="cambiarIdioma('en')"><img src="IMG/ingles.png"
+                                alt="Inglés"></a>
+                    </div>
+                </li>
+                <li><a href="PAGES/nosotros-en.html">About Us</a></li>
+                <li><a href="PAGES/menu-en.html">Menu</a></li>
+                <li><a href="PAGES/reservas-en.html">Reservations</a></li>
+                <li><a href="PAGES/contacto-en.html">Contact</a></li>
+                <li><a id="dark-mode-btn" href="#"><img src="IMG/oscuro.png" alt="Light Theme Icon" id="icono-tema"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h1>Welcome to La Esquina!</h1>
+        <p class="justificado">"Welcome to La Esquina in Huétor-Tájar!
+            Immerse yourself in a unique culinary experience where flavors meet and smiles are shared.
+            At La Esquina, every dish is a masterpiece of taste and tradition, designed to delight your senses
+            and create unforgettable moments. Come and join us in this cozy corner where good food and great
+            conversations converge to make each visit something special."</p>
+
+        <div class="slider">
+            <img src="IMG/local1.jpg" alt="Local 1">
+            <img src="IMG/local2.jpg" alt="Local 2">
+            <img src="IMG/local3.jpg" alt="Local 3">
+            <img src="IMG/local4.jpg" alt="Local 4">
+        </div>
+    </section>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/tema-oscuro.js"></script>
+
+    <footer>
+        <p>&copy; 2024 La Esquina. Designed by Miguel.</p>
+    </footer>
+
+    <script>
+        // JavaScript para cambiar de idioma
+        document.getElementById("btn-espanol").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+
+        document.getElementById("btn-english").addEventListener("click", function () {
+            window.location.href = "index-en.html";
+        });
+    </script>
+</body>
+
+</html>

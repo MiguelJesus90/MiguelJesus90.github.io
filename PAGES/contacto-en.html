@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="../JS/contacts.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li>
+                    <div id="language-buttons">
+                        <!-- Enlace con imagen para cambiar a español -->
+                        <a href="contacto.html" onclick="cambiarIdioma('es')"><img src="../IMG/espanol.png"
+                                alt="Español"></a>
+                        <!-- Enlace con imagen para cambiar a inglés -->
+                        <a href="contacto-en.html" onclick="cambiarIdioma('en')"><img src="../IMG/ingles.png"
+                                alt="Inglés"></a>
+                    </div>
+                </li>
+                <li><a href="../index-en.html">Home</a></li>
+                <li><a href="nosotros-en.html">About Us</a></li>
+                <li><a href="menu-en.html">Menu</a></li>
+                <li><a href="reservas-en.html">Reservations</a></li>
+                <li><a id="dark-mode-btn" href="#"><img src="../IMG/oscuro.png" alt="Light Theme Icon"
+                            id="icono-tema"></a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section>
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>We would love to hear from you! Get in touch with us through any of the following methods:
+            </p>
+        </div>
+        <div class="contact-info">
+            <h3>Contact Form</h3>
+            <form action="../PHP/process_contacts.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+        <hr>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> miguelmotog90@gmail.com</p>
+            <p><strong>Phone:</strong> +34 692 12 80 09</p>
+            <p><strong>Address:</strong> Calle Quevedo, 1, Huetor Tájar, 18360</p>
+        </div>
+        <div id="map-container">
+            <div id="mapid"></div>
+        </div>
+        <hr>
+        <div class="contact-info">
+            <h3>Social Media</h3>
+            <p>Follow us on our social media:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/yourpage">Facebook</a></li>
+                <li><a href="https://twitter.com/yourpage">Twitter</a></li>
+                <li><a href="https://www.instagram.com/yourpage">Instagram</a></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <script src="../JS/map.js"></script>
+    <script src="../JS/dark-theme.js"></script>
+
+
+    <footer>
+        <p>&copy; 2024 La Esquina. Designed by Miguel Jesus Arias Cañete.</p>
+    </footer>
+
+</body>
+
+</html>

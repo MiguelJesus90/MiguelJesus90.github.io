@@ -4,63 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú del Bar</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
-    
-  
+
+
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
+                <li>
+                    <div id="language-buttons">
+                        <!-- Enlace con imagen para cambiar a español -->
+                        <a href="nosotros.html" onclick="cambiarIdioma('es')"><img src="../IMG/espanol.png"
+                                alt="Español"></a>
+                        <!-- Enlace con imagen para cambiar a inglés -->
+                        <a href="nosotros-en.html" onclick="cambiarIdioma('en')"><img src="../IMG/ingles.png"
+                                alt="Inglés"></a>
+                    </div>
+                </li>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="menu.html">Menú</a></li>
                 <li><a href="reservas.html">Reservas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a id="dark-mode-btn" href="#"><img src="../IMG/oscuro.png" alt="Icono de Tema Claro" id="icono-tema"></a></li>
+                <li><a id="dark-mode-btn" href="#"><img src="../IMG/oscuro.png" alt="Icono de Tema Claro"
+                            id="icono-tema"></a></li>
 
             </ul>
-       
+
         </nav>
     </header>
-    
+
     <section class="contenido">
 
         <h1>¡Bienvenido a La Esquina! </h1>
-        <p>
+
+        <p class="justificado">
             ¡En La Esquina, Miguel y Rosi te dan la bienvenida con los brazos abiertos a un rincón lleno de encanto en
             Huetor Tajar!
             Desde que abrimos nuestras puertas en este pintoresco pueblo, nos hemos dedicado apasionadamente a brindarte
             experiencias que perduren en tus recuerdos.</p>
 
-        <p>Con Miguel, malagueño de pura cepa, y Rosi, nativa de Huetor Tajar, al frente, encontrarás en cada rincón de
+        <p class="justificado">Con Miguel, malagueño de pura cepa, y Rosi, nativa de Huetor Tajar, al frente,
+            encontrarás en cada rincón de
             nuestro
             establecimiento un pedacito de nuestra esencia. Nos esforzamos por crear un ambiente cálido y vibrante donde
             puedas disfrutar
             de momentos inolvidables con tus seres queridos y amigos de toda la vida.</p>
 
-        <p>Y no nos olvidamos de la comida. Desde deliciosos tentempiés para picar hasta reconfortantes platos
+        <p class="justificado">Y no nos olvidamos de la comida. Desde deliciosos tentempiés para picar hasta
+            reconfortantes platos
             principales,
             nuestra cocina fusiona lo mejor de la gastronomía malagueña con los sabores tradicionales de Huetor Tajar.
             Cada bocado está diseñado
             para complacer tus antojos y complementar a la perfección nuestras exquisitas bebidas.</p>
 
-        <p>Pero en La Esquina, no solo nos importa lo que servimos en el plato o en la copa, sino también
+        <p class="justificado">Pero en La Esquina, no solo nos importa lo que servimos en el plato o en la copa, sino
+            también
             la experiencia que creamos a tu alrededor. Nuestro equipo, bajo la dirección de Miguel y Rosi,
             está comprometido a brindarte un servicio amable y atento, asegurándose de que te sientas como
             en casa desde el momento en que cruzas nuestra puerta.</p>
 
-        <p>Así que ven y únete a nosotros en La Esquina, donde la buena compañía, las delicias culinarias y
+        <p class="justificado">Así que ven y únete a nosotros en La Esquina, donde la buena compañía, las delicias
+            culinarias y
             las bebidas de autor se combinan para crear momentos inolvidables en el corazón de Huetor Tajar.
             ¡Estamos ansiosos por recibirte y compartir contigo esta experiencia única!</p>
 
 
 
     </section>
-    
+
     <script src="../JS/tema-oscuro.js"></script>
-    
+
     <footer>
         <p>&copy;2024 La Esquina. Diseñado por Miguel.</p>
     </footer>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Menu</title>
+    <script src="../JS/reservas.js"></script>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div id="language-buttons">
+                        <!-- Enlace con imagen para cambiar a español -->
+                        <a href="reservas.html" onclick="cambiarIdioma('es')"><img src="../IMG/espanol.png"
+                                alt="Español"></a>
+                        <!-- Enlace con imagen para cambiar a inglés -->
+                        <a href="reservas-en.html" onclick="cambiarIdioma('en')"><img src="../IMG/ingles.png"
+                                alt="Inglés"></a>
+                    </div>
+                </li>
+                <li><a href="../index-en.html">Home</a></li>
+                <li><a href="nosotros-en.html">About Us</a></li>
+                <li><a href="menu-en.html">Menu</a></li>
+                <li><a href="contacto-en.html">Contact</a></li>
+                <li><a id="dark-mode-btn" href="#"><img src="../IMG/oscuro.png" alt="Dark Theme Icon"
+                            id="icono-tema"></a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <section id="reservas">
+
+        <form id="reservaForm" action="../PHP/procesar_reservas.php" method="post">
+            <h1>Make Your Reservation!</h1>
+            <label for="nombre">Name:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="fecha">Date:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="hora">Time:</label>
+            <input type="time" id="hora" name="hora" required>
+            <label for="personas">Number of People:</label>
+            <input type="number" id="personas" name="personas" min="1">
+
+            <button type="submit">Send Reservation</button>
+            <div id="mensaje"></div>
+        </form>
+
+
+
+    </section>
+
+    <script src="../JS/tema-oscuro.js"></script>
+
+    <footer>
+        <p>&copy; 2024 La Esquina. Designed by Miguel Jesus Arias Cañete.</p>
+    </footer>
+</body>
+
+</html>
