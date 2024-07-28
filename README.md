@@ -3,8 +3,7 @@
 
 ¡Bienvenido al repositorio de La Esquina - Bar Restaurante!
 
-Mi aplicación web ofrece un menú interactivo, reservas simplificadas y contacto directo. Además, cuenta con un sistema de correo electrónico integrado para enviar confirmaciones de reserva y recibir mensajes de contacto.
-
+Mi aplicación web ofrece un menú interactivo, reservas simplificadas y contacto directo. Integra la API de Google Maps para una mejor localización, y el sistema de reservas envía automáticamente las confirmaciones a los responsables de la aplicación.
 
 ## Instalación
 
